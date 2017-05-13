@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CorePowerSchedule>
+<Omtime>
     <NumDays>1</NumDays>
     <ScheduleFetchWeeks>2</ScheduleFetchWeeks>
     <CookieValidSeconds>600</CookieValidSeconds>
@@ -70,4 +70,4 @@
         <Class>HY</Class>
         <Class>YS</Class>
     </FavoriteClasses>
-</CorePowerSchedule>
+</Omtime>

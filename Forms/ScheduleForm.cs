@@ -36,7 +36,7 @@ namespace Omtime
         private const string DEFAULT_STATE_FILE = "Omtime.XML.DefaultXmlState.xml";
         private const string DEFAULT_STATE_FILE_GENRES = "Omtime.XML.DefaultXmlStateClassGenres.xml";
         private const string STATE_FILE = "Omtime.xml";
-        private const string STATE_FILE_GENRES = "OmGenres.xml";
+        private const string STATE_FILE_GENRES = "Omgenres.xml";
         private const string APPLICATION_BACKGROUND_IMAGE_LIBRARY = "Img\\";
 
         private Timer mClassGenreAssimilationModeTimer = new Timer();

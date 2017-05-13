@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+    <item>
+        <key>
+            <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <string>BootCamp Open House Workout</string>
+            </ArrayOfString>
+        </key>
+        <value>
+            <string>BC</string>
+        </value>
+    </item>
+    <item>
+        <key>
+            <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <string>CoreRestore - Restorative Yoga: 75 Minutes</string>
+            </ArrayOfString>
+        </key>
+        <value>
+            <string>CR</string>
+        </value>
+    </item>
+</Dictionary>

@@ -1,0 +1,78 @@
+***** Headers as parsed data *****
+
+Request URL:https://clients.mindbodyonline.com/ASP/main_class.asp
+Request Method:POST
+Status Code:200 OK
+Request Headers
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:250
+Content-Type:application/x-www-form-urlencoded
+Cookie:__utma=32092140.1335690942.1370467755.1370467755.1370467755.1; __utmz=32092140.1370467755.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SessionFarm%5FGUID=%7B74D4ABFB%2DAFF7%2D4D43%2DB659%2DF58F6FAD4326%7D; TS21dc34=df9a5f59fcbcde1029a5680ec5066d20d0cdd9ac7be4d78651b8d5bfbbb4239c5d5ef0ec; __utma=167927229.1282353449.1366056289.1371000259.1371067841.17; __utmb=167927229.2.10.1371067841; __utmc=167927229; __utmz=167927229.1366056289.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Host:clients.mindbodyonline.com
+Origin:https://clients.mindbodyonline.com
+Referer:https://clients.mindbodyonline.com/ASP/main_class.asp?tg=&vt=&lvl=&stype=&view=&trn=0&page=&catid=&prodid=&date=6%2F12%2F2013&classid=0&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=
+User-Agent:Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36
+Form Data
+pageNum:1
+requiredtxtUserName:
+requiredtxtPassword:
+optForwardingLink:
+optRememberMe:
+tabID:7
+optView:week
+useClassLogic:
+filterByClsSch:
+prevFilterByClsSch:-1
+prevFilterByClsSch2:-2
+txtDate:6/12/2013
+optLocation:0
+optTG:0
+optVT:0
+optInstructor:0
+Response Headers
+Cache-Control:private
+Content-Encoding:gzip
+Content-Type:text/html; Charset=utf-8
+Date:Wed, 12 Jun 2013 20:10:53 GMT
+P3P:CAO DSP COR CUR TAIa OUR NOR UNI STA
+Server:ECD (lax/281A)
+Transfer-Encoding:chunked
+Vary:Accept-Encoding
+X-Powered-By:ASP.NET
+
+***** Headers as source *****
+
+Request URL:https://clients.mindbodyonline.com/ASP/main_class.asp
+Request Method:POST
+Status Code:200 OK
+Request Headers
+POST /ASP/main_class.asp HTTP/1.1
+Host: clients.mindbodyonline.com
+Connection: keep-alive
+Content-Length: 250
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Origin: https://clients.mindbodyonline.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: https://clients.mindbodyonline.com/ASP/main_class.asp?tg=&vt=&lvl=&stype=&view=&trn=0&page=&catid=&prodid=&date=6%2F12%2F2013&classid=0&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cookie: __utma=32092140.1335690942.1370467755.1370467755.1370467755.1; __utmz=32092140.1370467755.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SessionFarm%5FGUID=%7B74D4ABFB%2DAFF7%2D4D43%2DB659%2DF58F6FAD4326%7D; TS21dc34=df9a5f59fcbcde1029a5680ec5066d20d0cdd9ac7be4d78651b8d5bfbbb4239c5d5ef0ec; __utma=167927229.1282353449.1366056289.1371000259.1371067841.17; __utmb=167927229.2.10.1371067841; __utmc=167927229; __utmz=167927229.1366056289.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Form Data
+pageNum=1&requiredtxtUserName=&requiredtxtPassword=&optForwardingLink=&optRememberMe=&tabID=7&optView=week&useClassLogic=&filterByClsSch=&prevFilterByClsSch=-1&prevFilterByClsSch2=-2&txtDate=6%2F12%2F2013&optLocation=0&optTG=0&optVT=0&optInstructor=0
+Response Headers
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Cache-Control: private
+Content-Type: text/html; Charset=utf-8
+Date: Wed, 12 Jun 2013 20:10:53 GMT
+P3P: CAO DSP COR CUR TAIa OUR NOR UNI STA
+Server: ECD (lax/281A)
+Vary: Accept-Encoding
+X-Powered-By: ASP.NET
+Transfer-Encoding: chunked

@@ -1,0 +1,1864 @@
+﻿<table id="classSchedule-mainTable" class="" cellspacing="0">
+  <thead>
+    <tr class="floatingHeaderRow">
+      <th id="startTimeHeader" class="floatingHeader" style="padding-left:10px;" >Start time</th>
+      <th id="signUpNowHeader" class="floatingHeader" style="cursor:auto;">&nbsp;</th>
+      <th id="classNameHeader" valign="bottom" class="floatingHeader" >Classes</th>
+      <th id="trainerNameHeader" valign="bottom" class="floatingHeader">Teacher</th>
+      <th id="locationNameHeader" align="left" valign="bottom" class="floatingHeader" >Studio</th>
+      <th id="durationHeader" class="floatingHeader" >Duration</th>
+    </tr>
+  </thead>
+  <tr>
+    <td colspan="100%" class="header"id="an2">
+      <b>
+        &nbsp;<span class="headText">Mon&nbsp;</span>June 03, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000049" class="modalBio" >Tiffany</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>6:00&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">
+        <s>CorePower Yoga Sculpt - Heated Power Yoga with Weights
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000612" class="modalBio" >
+        <span style="color:#990000;">Brynne</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledKali">
+          <span style="color:#990000;">(1)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000267" class="modalBio" >
+        <span style="color:#990000;">Alyssa</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledBryan">
+          <span style="color:#990000;">(2)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Ashley Gl</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledKali">
+          <span style="color:#990000;">(3)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000554" class="modalBio" >
+        <span style="color:#990000;">Luciana J</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledSonny B">
+          <span style="color:#990000;">(4)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000047" class="modalBio" >Emily D</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid138" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga: $12</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000370" class="modalBio" >Meagan</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000105" class="modalBio" >Meredith</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000554" class="modalBio" >Luciana J</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000370" class="modalBio" >Meagan</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid208" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga: $12</a>
+    </td>
+    <td>Kathi</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid174" class="modalClassDesc">CoreRestore - Restorative Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000305" class="modalBio" >Bryan</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000357" class="modalBio" >Tabu</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;4:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid4" class="modalClassDesc">Hot Yoga - 60 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000016" class="modalBio" >Dee H</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Andre</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000678" class="modalBio" >Andrea G</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>Sam L</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;7:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid200" class="modalClassDesc">Hot Yoga - 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000678" class="modalBio" >Andrea G</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000141" class="modalBio" >Cheryl</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid17" class="modalClassDesc">Hot Power Fusion - Candlelight</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000682" class="modalBio" >SandraG</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header"id="an3">
+      <b>
+        &nbsp;<span class="headText">Tue&nbsp;</span>June 04, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000105" class="modalBio" >Meredith</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000820" class="modalBio" >Diana Sophia</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000305" class="modalBio" >Bryan</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000267" class="modalBio" >Alyssa</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Kathi</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledBeth">
+          <span style="color:#990000;">(5)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid138" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga: $12</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Kathi</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledAndrea G">
+          <span style="color:#990000;">(6)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Andre</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000554" class="modalBio" >Luciana J</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid232" class="modalClassDesc">CorePower Yoga 1.5 - Intro to Heated Power Yoga: $12</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Dianna</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledKali">
+          <span style="color:#990000;">(7)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid174" class="modalClassDesc">CoreRestore - Restorative Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio" >Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;4:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000261" class="modalBio" >
+        <span style="color:#990000;">Sommer</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledKali">
+          <span style="color:#990000;">(8)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000427" class="modalBio" >Haley May</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100002138" class="modalBio" >
+        <span style="color:#990000;">Laurel</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledKali">
+          <span style="color:#990000;">(9)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000357" class="modalBio" >Tabu</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;7:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Shawn</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledNellie">
+          <span style="color:#990000;">(10)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Dianna</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid17" class="modalClassDesc">Hot Power Fusion - Candlelight</a>
+    </td>
+    <td>Shawn</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid233" class="modalClassDesc">CorePower Yoga 1.5 - Intro to Heated Power Yoga: Candlelight</a>
+    </td>
+    <td>Dianna</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header"id="an4">
+      <b>
+        &nbsp;<span class="headText">Wed&nbsp;</span>June 05, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000059" class="modalBio" >
+        <span style="color:#990000;">Tara</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledRick">
+          <span style="color:#990000;">(11)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000687" class="modalBio" >Tori</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000082" class="modalBio" >Amy P</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000059" class="modalBio" >Tara</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000082" class="modalBio" >Amy P</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio" >Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid138" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga: $12</a>
+    </td>
+    <td>Kathi</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000554" class="modalBio" >Luciana J</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000320" class="modalBio" >Kristin O</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid208" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga: $12</a>
+    </td>
+    <td>Kathi</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid174" class="modalClassDesc">CoreRestore - Restorative Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000320" class="modalBio" >Kristin O</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000269" class="modalBio" >Christina H</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;4:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid4" class="modalClassDesc">Hot Yoga - 60 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000305" class="modalBio" >Bryan</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1109" class="modalClassDesc">CorePower Yoga 3 - Advanced Heated Power Yoga: 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio" >Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000006" class="modalBio" >Sheri</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000357" class="modalBio" >Tabu</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;7:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid200" class="modalClassDesc">Hot Yoga - 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000643" class="modalBio" >Jamie H</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Pam</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledKatie B">
+          <span style="color:#990000;">(12)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid17" class="modalClassDesc">Hot Power Fusion - Candlelight</a>
+    </td>
+    <td>Shawn</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header"id="an5">
+      <b>
+        &nbsp;<span class="headText">Thu&nbsp;</span>June 06, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000105" class="modalBio" >Meredith</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>Jackie B</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000554" class="modalBio" >Luciana J</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000531" class="modalBio" >Mimi</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000055" class="modalBio" >Amy O</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid138" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga: $12</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000305" class="modalBio" >Bryan</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>Amore</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <span style="color:#990000;">John Jay</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledAndrea G">
+          <span style="color:#990000;">(13)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid232" class="modalClassDesc">CorePower Yoga 1.5 - Intro to Heated Power Yoga: $12</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid174" class="modalClassDesc">CoreRestore - Restorative Yoga</a>
+    </td>
+    <td>Amore</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100002123" class="modalBio" >Kaitlin B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;4:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>John Jay</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000267" class="modalBio" >Alyssa</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga</a>
+    </td>
+    <td>Saree</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio" >Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;7:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid200" class="modalClassDesc">Hot Yoga - 75 Minutes</a>
+    </td>
+    <td>John Jay</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100002287" class="modalBio" >Kellie</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid17" class="modalClassDesc">Hot Power Fusion - Candlelight</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000049" class="modalBio" >Tiffany</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid117" class="modalClassDesc">CorePower Yoga 1.5 - Intro to Heated Power Yoga</a>
+    </td>
+    <td>Tina I</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header"id="an6">
+      <b>
+        &nbsp;<span class="headText">Fri&nbsp;</span>June 07, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Sarah A</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000049" class="modalBio" >Tiffany</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>Tanya</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000049" class="modalBio" >Tiffany</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>Kali</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>Sarah A</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000267" class="modalBio" >Alyssa</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid138" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga: $12</a>
+    </td>
+    <td>John Jay</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000049" class="modalBio" >Tiffany</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;12:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000016" class="modalBio" >Dee H</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid232" class="modalClassDesc">CorePower Yoga 1.5 - Intro to Heated Power Yoga: $12</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000016" class="modalBio" >Dee H</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;2:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid174" class="modalClassDesc">CoreRestore - Restorative Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000716" class="modalBio" >Eliza</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <span style="color:#990000;">Amore</span>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledAron">
+          <span style="color:#990000;">(14)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;4:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>Tanya</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid5" class="modalClassDesc">CorePower Yoga 3 - Advanced Heated Power Yoga</a>
+    </td>
+    <td>Tanya</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1" class="modalClassDesc">CorePower Yoga 1 - Intro to Power Yoga</a>
+    </td>
+    <td>Saree</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid345" class="modalClassDesc">CoreRestore - Restorative Yoga: 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000415" class="modalBio" >Julie Q</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header"id="an7">
+      <b>
+        &nbsp;<span class="headText">Sat&nbsp;</span>June 08, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;7:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000357" class="modalBio" >Tabu</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>8:00&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid196" class="modalClassDesc">
+        <s>Hot Power Fusion - 75 Minutes
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+    </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Andre</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>9:00&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">
+        <s>CorePower Yoga Sculpt - Heated Power Yoga with Weights
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="evenRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>10:00&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid117" class="modalClassDesc">
+        <s>CorePower Yoga 1.5 - Intro to Heated Power Yoga
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;10:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Beth</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="evenRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>11:30&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1" class="modalClassDesc">
+        <s>CorePower Yoga 1 - Intro to Power Yoga
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;11:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000055" class="modalBio" >Amy O</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000357" class="modalBio" >
+        <span style="color:#990000;">Tabu</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledAndrea G">
+          <span style="color:#990000;">(15)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:45&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">Hot Power Fusion</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000820" class="modalBio" >Diana Sophia</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header"id="an1">
+      <b>
+        &nbsp;<span class="headText">Sun&nbsp;</span>June 09, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid196" class="modalClassDesc">Hot Power Fusion - 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000678" class="modalBio" >
+        <span style="color:#990000;">Andrea G</span>
+      </a>
+      <span class="smallTextBlack">
+        <a title="Regularly ScheduledHaley May">
+          <span style="color:#990000;">(16)</span>
+        </a>
+      </span>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="oddRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>8:30&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">
+        <s>CorePower Yoga 2 - Heated Power Yoga
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="evenRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>9:00&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">
+        <s>CorePower Yoga Sculpt - Heated Power Yoga with Weights
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="oddRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>10:00&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid117" class="modalClassDesc">
+        <s>CorePower Yoga 1.5 - Intro to Heated Power Yoga
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;10:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Andre</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>11:30&nbsp;am 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1" class="modalClassDesc">
+        <s>CorePower Yoga 1 - Intro to Power Yoga
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;11:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>Lisa Y</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>Tanya</td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>5:30&nbsp;pm 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid14" class="modalClassDesc">
+        <s>Hot Power Fusion
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour</td>
+    </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:45&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid200" class="modalClassDesc">Hot Yoga - 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000678" class="modalBio" >Andrea G</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr class="evenRow">
+    <td>
+      &nbsp;&nbsp;&nbsp;<s>7:00&nbsp;pm 
+    
+    </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid86" class="modalClassDesc">
+        <s>CorePower Yoga 1 - Intro to Power Yoga: FREE
+      </a>
+    </td>
+    <td>
+      <span style="color:#990000;">Cancelled Today</span>
+      <td>
+        <a class="modalLocationInfo" href="javascript:;" name="loc1">
+          <s>SD-Point Loma 
+        </a>
+      </td>
+      <td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+    </tr>
+  <tr>
+    <td  colspan="100%" >
+      <div class="foot-notes-container">
+        <span class="headText bold" >Regularly Scheduled:&nbsp;</span><span style="color:#990000;">(1)</span>&nbsp;Kali  <span style="color:#990000;">(2)</span>&nbsp;Bryan  <span style="color:#990000;">(3)</span>&nbsp;Kali  <span style="color:#990000;">(4)</span>&nbsp;Sonny B  <span style="color:#990000;">(5)</span>&nbsp;Beth  <span style="color:#990000;">(6)</span>&nbsp;Andrea G  <span style="color:#990000;">(7)</span>&nbsp;Kali  <span style="color:#990000;">(8)</span>&nbsp;Kali  <span style="color:#990000;">(9)</span>&nbsp;Kali  <span style="color:#990000;">(10)</span>&nbsp;Nellie  <span style="color:#990000;">(11)</span>&nbsp;Rick  <span style="color:#990000;">(12)</span>&nbsp;Katie B  <span style="color:#990000;">(13)</span>&nbsp;Andrea G  <span style="color:#990000;">(14)</span>&nbsp;Aron  <span style="color:#990000;">(15)</span>&nbsp;Andrea G  <span style="color:#990000;">(16)</span>&nbsp;Haley May
+      </div>
+    </td>
+  </tr>
+</table>

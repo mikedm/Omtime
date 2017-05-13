@@ -1,0 +1,38 @@
+
+<table id="classSchedule-mainTable" class="" cellspacing="0">
+<thead>
+<tr class="floatingHeaderRow">
+<th id="startTimeHeader" class="floatingHeader" style="padding-left:10px;" >Start time</th><
+th id="signUpNowHeader" class="floatingHeader" style="cursor:auto;">&nbsp;</th>
+<th id="classNameHeader" valign="bottom" class="floatingHeader" >Classes</th>
+<th id="trainerNameHeader" valign="bottom" class="floatingHeader">Teacher</th>
+<th id="locationNameHeader" align="left" valign="bottom" class="floatingHeader" >Studio</th>
+<th id="durationHeader" class="floatingHeader" >Duration</th></tr>
+</thead>
+
+<tr>
+<td colspan="100%" class="header"id="an2"><b>&nbsp;<span class="headText">Mon&nbsp;</span>June 10, 2013&nbsp;</b></td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:45&nbsp;am </td>
+<td></td>
+<td><a href="javascript:;" name="cid215" class="modalClassDesc">CorePower Ryder</a></td>
+<td>Meleah</td>
+<td><a class="modalLocationInfo" href="javascript:;" name="loc15">OC-Irvine </a></td>
+<td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow">
+<td>&nbsp;&nbsp;&nbsp;5:45&nbsp;am </td>
+<td></td>
+<td><a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a></td>
+<td><a href="javascript:;" name="bio100000862" class="modalBio" ><span style="color:#990000;">Kelly So</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledMichelle A"><span style="color:#990000;">(1)</span></a></span></td>
+<td><a class="modalLocationInfo" href="javascript:;" name="loc9">OC-Costa Mesa </a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow">
+<td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+<td></td>
+<td><a href="javascript:;" name="cid496" class="modalClassDesc">CorePower Ryde & Sculpt (RAS)</a></td>
+<td><a href="javascript:;" name="bio100000541" class="modalBio" >Carolyn R</a></td>
+<td><a class="modalLocationInfo" href="javascript:;" name="loc7">Bay-Berkeley </a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow">
+<td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td>
+
+<td></td><td><a href="javascript:;" name="cid215" class="modalClassDesc">CorePower Ryder</a></td><td><a href="javascript:;" name="bio100002101" class="modalBio" >Alexandra S</a></td><td><a class="modalLocationInfo" href="javascript:;" name="loc25">WA-Ballard</a></td><td >&nbsp;45&nbsp;minutes</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td><td></td><td><a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a></td><td><span style="color:#990000;">Kelly R</span> <span class="smallTextBlack"><a title="Regularly ScheduledJen Ro"><span style="color:#990000;">(2)</span></a></span></td><td><a class="modalLocationInfo" href="javascript:;" name="loc14">SD-Encinitas </a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td><td></td><td><a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a></td><td><a href="javascript:;" name="bio100000847" class="modalBio" >Kattyna</a></td><td><a class="modalLocationInfo" href="java

@@ -1,0 +1,8 @@
+1. Assimilate class with class genre
+2. Edit class genre name
+3. When saving favorites, do not remove a favorite that is not currently displayed
+   This happens, for example, when an instructor is out for 2 weeks with 0 classes
+4. Experimental:  Try this out to see how it feels.
+   Right-click on any of instructor, studio, or class, and show all for it
+5. Show last refresh date/time when hovering over the Refresh button
+6. Enable hotkey F5 to perform refresh operation

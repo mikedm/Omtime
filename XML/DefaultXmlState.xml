@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CorePowerSchedule>
+    <NumDays>1</NumDays>
+    <ScheduleFetchWeeks>2</ScheduleFetchWeeks>
+    <CookieValidSeconds>600</CookieValidSeconds>
+    <Morning>True</Morning>
+    <Afternoon>True</Afternoon>
+    <Evening>True</Evening>
+    <ClassGenresEnabled>True</ClassGenresEnabled>
+    <AllowPastSchedule>False</AllowPastSchedule>
+    <HttpWebRequestTimeoutSeconds>18</HttpWebRequestTimeoutSeconds>
+    <Studios selectedId="1419">
+        <Studio id="864" citySpecific="">CPY Midwest</Studio>
+        <Studio id="1419" citySpecific="SD">CPY West Coast</Studio>
+        <Studio id="26436" citySpecific="CA">Yoga Six SD</Studio>
+        <Studio id="44700" citySpecific="">Orange Theory PL</Studio>
+        <Studio id="154273" citySpecific="">SD Paddle Yoga</Studio>
+        <Studio id="28194" citySpecific="">Nature's Whisper</Studio>
+        <Studio id="227350" citySpecific="">Elka</Studio>
+    </Studios>
+    <FavoriteInstructors>
+        <Instructor>Alyssa</Instructor>
+        <Instructor>Amore</Instructor>
+        <Instructor>Amy O</Instructor>
+        <Instructor>Andre</Instructor>
+        <Instructor>Aron</Instructor>
+        <Instructor>Audrey P</Instructor>
+        <Instructor>Beth</Instructor>
+        <Instructor>Cici</Instructor>
+        <Instructor>Eliza</Instructor>
+        <Instructor>Emily D</Instructor>
+        <Instructor>Forrest</Instructor>
+        <Instructor>Ivy P</Instructor>
+        <Instructor>Jenn R</Instructor>
+        <Instructor>Jennika</Instructor>
+        <Instructor>Jenny Dr</Instructor>
+        <Instructor>Josh B</Instructor>
+        <Instructor>Kate T</Instructor>
+        <Instructor>Katie B</Instructor>
+        <Instructor>Kellie</Instructor>
+        <Instructor>Kim B</Instructor>
+        <Instructor>Kim VF</Instructor>
+        <Instructor>Lauren St</Instructor>
+        <Instructor>Marissa H</Instructor>
+        <Instructor>Meli</Instructor>
+        <Instructor>Nikki</Instructor>
+        <Instructor>Pegah K</Instructor>
+        <Instructor>Sara D</Instructor>
+        <Instructor>Sonny B</Instructor>
+        <Instructor>Steve</Instructor>
+        <Instructor>Susie S</Instructor>
+        <Instructor>Tabu</Instructor>
+        <Instructor>Thomas W</Instructor>
+        <Instructor>Xuyen</Instructor>
+    </FavoriteInstructors>
+    <FavoriteStudios>
+        <Studio>Hillcrest</Studio>
+        <Studio>North Park</Studio>
+        <Studio>Pacific Beach</Studio>
+        <Studio>Point Loma</Studio>
+    </FavoriteStudios>
+    <FavoriteClasses>
+        <Class>C1</Class>
+        <Class>C1.5</Class>
+        <Class>C2</Class>
+        <Class>C3</Class>
+        <Class>CC</Class>
+        <Class>CR</Class>
+        <Class>HPF</Class>
+        <Class>HY</Class>
+        <Class>YS</Class>
+    </FavoriteClasses>
+</CorePowerSchedule>

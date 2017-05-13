@@ -1,0 +1,193 @@
+﻿<table id="classSchedule-mainTable" class="" cellspacing="0">
+  <thead>
+    <tr class="floatingHeaderRow">
+      <th id="startTimeHeader" class="floatingHeader" style="padding-left:10px;">Start time</th>
+      <th id="signUpNowHeader" class="floatingHeader" style="cursor:auto;">&nbsp;</th>
+      <th id="classNameHeader" valign="bottom" class="floatingHeader">Classes</th>
+      <th id="trainerNameHeader" valign="bottom" class="floatingHeader">Teacher</th>
+      <th id="locationNameHeader" align="left" valign="bottom" class="floatingHeader">Studio</th>
+      <th id="durationHeader" class="floatingHeader">Duration</th>
+    </tr>
+  </thead>
+  <tr>
+    <td colspan="100%" class="header" id="an2">
+      <b>
+        &nbsp;<span class="headText">Mon&nbsp;</span>June 03, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr style="background-color:#F2F2F2;">
+    <td class="" colspan="100%">&nbsp;&nbsp;&nbsp;&nbsp;no scheduled classes or training sessions</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header" id="an3">
+      <b>
+        &nbsp;<span class="headText">Tue&nbsp;</span>June 04, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;6:30&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc4">SD-Pacific Beach </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;8:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid3" class="modalClassDesc">CorePower Yoga 2 - Heated Power Yoga</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc4">SD-Pacific Beach </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header" id="an4">
+      <b>
+        &nbsp;<span class="headText">Wed&nbsp;</span>June 05, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;5:15&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid1109" class="modalClassDesc">CorePower Yoga 3 - Advanced Heated Power Yoga: 75 Minutes</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header" id="an5">
+      <b>
+        &nbsp;<span class="headText">Thu&nbsp;</span>June 06, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;10:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc4">SD-Pacific Beach </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr class="oddRow">
+    <td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc1">SD-Point Loma </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header" id="an6">
+      <b>
+        &nbsp;<span class="headText">Fri&nbsp;</span>June 07, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;10:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc4">SD-Pacific Beach </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header" id="an7">
+      <b>
+        &nbsp;<span class="headText">Sat&nbsp;</span>June 08, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr class="evenRow">
+    <td>&nbsp;&nbsp;&nbsp;10:30&nbsp;am </td>
+    <td></td>
+    <td>
+      <a href="javascript:;" name="cid6" class="modalClassDesc">CorePower Yoga Sculpt - Heated Power Yoga with Weights</a>
+    </td>
+    <td>
+      <a href="javascript:;" name="bio100000624" class="modalBio">Katie B</a>
+    </td>
+    <td>
+      <a class="modalLocationInfo" href="javascript:;" name="loc4">SD-Pacific Beach </a>
+    </td>
+    <td>&nbsp;1&nbsp;hour&nbsp;&&nbsp;15&nbsp;minutes</td>
+  </tr>
+  <tr>
+    <td colspan="100%" class="header" id="an1">
+      <b>
+        &nbsp;<span class="headText">Sun&nbsp;</span>June 09, 2013&nbsp;
+      </b>
+    </td>
+  </tr>
+  <tr style="background-color:#F2F2F2;">
+    <td class="" colspan="100%">&nbsp;&nbsp;&nbsp;&nbsp;no scheduled classes or training sessions</td>
+  </tr>
+</table>

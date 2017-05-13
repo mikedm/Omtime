@@ -1,0 +1,1322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- IRV-WEB-CLI-019 -->
+
+
+
+
+
+
+
+
+        
+
+    
+<style type="text/css">
+	.userHTML ul {list-style: disc outside none !important;}
+	.userHTML ol {list-style: decimal  !important;}
+	.userHTML li {margin-left:30px;}
+	.userHTML em {font-style: italic;}
+	.userHTML blockquote
+	{
+		display: block;
+		margin: 1em 40px;
+	}
+	.userHTML big 
+	{
+		font-size: larger;
+	}
+	.userHTML small
+	{
+		font-size: smaller;
+	}
+	.userHTML kbd, .userHTML code
+	{
+		font-family: monospace;
+	}
+	.userHTML pre
+	{
+		margin: 1em 0px;
+		display: block;
+		white-space: pre;
+	}
+	.userHTML sup
+	{
+		vertical-align: super;
+		font-size: smaller;
+	}
+	.userHTML sub
+	{
+		vertical-align: sub;
+		font-size: smaller;
+	}
+</style>
+<script type="text/javascript">
+	if (typeof ($) != "undefined") {
+		$(function () {
+			// Puts focus inside a tinyMCE box when it's corresponding <label> tag is clicked
+			$(".for-tinymce").live("click", function (e) {
+				if (typeof (tinyMCE) != "undefined") {
+					e.preventDefault();
+					tinyMCE.get($(this).prop('for')).focus();
+				}
+			});
+			var $userTables = $(".userHTML table");
+			
+			if ($userTables.attr("border") != "") {
+				$userTables.find("td, th").css("border", "1px solid black");
+			}
+		});
+	}
+</script>
+
+    
+    
+    
+
+<script type="text/javascript">
+function autoSubmitDateTo(dayWeekOrMonth, addOrSub) {
+	//strange way to get a "month advance" in here without breaking all kinds of stuff
+	//because this func was originally built to accept T/F to indicate day or week,
+	//we're now also allowing you to also pass strings "day"/"week"/"month". 
+	//passing true will still equate to "day", and false will equate to "week"
+    var tmpDate;
+	
+	if (dayWeekOrMonth == true && dayWeekOrMonth != "month" ) {
+		if (addOrSub)	{
+			tmpDate = "4/18/2015";
+		} else {
+			tmpDate = "4/16/2015";
+		}
+	} else if (dayWeekOrMonth == false || dayWeekOrMonth == "week") {
+		if (addOrSub)	{
+			tmpDate = "4/24/2015";
+		} else {
+			tmpDate = "4/10/2015";
+		}
+	} else { //month
+		if (addOrSub)	{
+			tmpDate = "5/17/2015";
+		} else {
+			tmpDate = "3/17/2015";
+		}	
+	}
+	
+	//parent.frames['topFrame'].document.search2.txtDate.value = tmpDate;
+	//parent.frames['topFrame'].document.search2.pageNum.value = 1;
+	//parent.frames['topFrame'].document.search2.submit();
+	document.search2.txtDate.value = tmpDate;
+	document.search2.pageNum.value = 1;
+	document.search2.submit();
+}
+function autoSubmitToToday() {
+	//parent.frames['mainFrame'].document.search2.txtDate.value = "4/17/2015";
+	//parent.frames['mainFrame'].document.search2.pageNum.value = 1;
+	//parent.frames['mainFrame'].document.search2.submit();
+	document.search2.txtDate.value = "4/17/2015";
+	document.search2.pageNum.value = 1;
+	document.search2.submit();
+}
+</script>
+    <script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/inc_fixed_bar.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/plugins/jquery.inlineEdit.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/plugins/jquery.autoResize.js" ></script>
+<style type="text/css">
+    /* fixed-spacer gets css height at the same time fixed-bar gets fixed position in JS */
+    .fixed-bar-table {
+        width: 100%;
+        background-color: white;
+        font-family: Trebuchet MS, Helvetica, Arial, Sans-Serif;
+        z-index: 10;
+    }
+
+    td.fixed-bar-table-l {
+        vertical-align: top;
+        width: 40%;
+        padding-left: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    td.fixed-bar-table-c {
+        vertical-align: top;
+        width: 20%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    td.fixed-bar-table-r {
+        vertical-align: top;
+        width: 40%;
+        text-align: right;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .date-arrow-l, .date-arrow-r, .date-tog-l, .date-tog-r {
+        background: url('https://static.mindbodyonline.com/v65289/images/dates_s.png') no-repeat top left;
+        width: 19px;
+        height: 19px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        color: #555;
+    }
+
+    #day-arrow-r, #week-arrow-r, #today-button {
+        padding-right: 5px;
+    }
+
+    .today-button {
+        background: #ffffff;
+        color: #333333;
+        border: solid 1px rgb(204, 41, 43);
+        border: solid 1px rgba(204, 41, 43,0.4);
+        height: 18px;
+        padding-top: 3px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0idG9kYXktYnV0dG9uIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNDQzI5MkIiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0NDMjkyQiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3RvZGF5LWJ1dHRvbikiIC8+PC9zdmc+);
+background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(204, 41, 43,0.25)), to(rgba(204, 41, 43,0)));
+background-image: -moz-linear-gradient(center bottom, rgba(204, 41, 43,0.25) 0%, rgba(204, 41, 43,0) 100%);
+;
+    }
+
+        .today-button.is-today {
+            background: #cc292b !important;
+            color: #FFFFFF;
+            border: solid 1px rgb(184, 37, 39);
+            -ms-text-shadow: 0 -1px 1px rgb(163, 33, 34);
+            text-shadow: 0 -1px 1px rgb(163, 33, 34);
+            font-weight: bold;
+            -webkit-filter: none !important;
+            -moz-filter: none !important;
+            -o-filter: none !important;
+            filter: none !important;
+        }
+
+    .date-arrow-l {
+        background-position: 0 -222px;
+    }
+
+
+        .date-arrow-l:hover {
+            background-position: 0 -148px;
+        }
+
+        .date-arrow-l.no-arrow {
+            background-position: 0 -370px !important;
+        }
+
+    .date-arrow-r {
+        background-position: 0 -74px;
+    }
+
+        .date-arrow-r:hover {
+            background-position: 0 0;
+        }
+
+        .date-arrow-r.no-arrow {
+            background-position: 0 -296px !important;
+        }
+    /*.cur-date { font-family: Trebuchet MS,Helvetica,Arial,Sans-Serif; color: #cc292b; font-size: 16px; vertical-align: middle; margin-right: 4px;}
+.today { color: #cc292b; font-weight: bold; }*/
+    .cur-date {
+        font-family: "Helvetica Neue","Helvetica","Lucida Grande","Lucida Sans Unicode","Lucida Sans","Arial,sans-serif";
+        vertical-align: middle;
+        margin-right: 4px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #curDateWrapper {
+        height: 24px;
+        width: 350px; /*longest ones are kyrgyz/ Tamil(India)*/
+    }
+
+    .cur-date-long {
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    #txtDate, #cur-date-long-edit {
+        margin-left: 0;
+        margin-top: -2px;
+        font-size: 12px;
+        padding: 2px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -moz-min-width: 120px;
+        -ms-min-width: 120px;
+        -o-min-width: 120px;
+        -webkit-min-width: 120px;
+        min-width: 120px;
+    }
+
+    #cur-date-long-edit {
+        border: 1px solid #FFF;
+        -webkit-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+    }
+
+        #cur-date-long-edit:hover {
+            border: solid 1px #9E9FA0;
+            background-color: #F4F4F4;
+        }
+
+    .today td {
+        background-color: #cc292b;
+        font-weight: bold;
+    }
+
+    .day-tog, .week-tog, .month-tog {
+        cursor: default;
+    }
+
+    .selectable {
+        cursor: pointer !important;
+    }
+
+    .selectable-hover {
+        background-image: url(https://static.mindbodyonline.com/v65289/images/date-span-bg-hover.png) !important;
+        background-repeat: repeat-x;
+    }
+    /* .today-button{background-image: url(https://static.mindbodyonline.com/v65289/images/date-span-bg.png); background-repeat:repeat-x;} */
+    /* .today-button-hover{background-image: url(https://static.mindbodyonline.com/v65289/images/date-span-bg-hover.png) !important; background-repeat:repeat-x;} */
+    .date-tog-l {
+        background-position: 0 -280px;
+        width: 6px;
+        height: 20px;
+        display: none;
+    }
+
+    .date-tog-r {
+        background-position: 0 -350px;
+        width: 6px;
+        height: 20px;
+        display: none;
+    }
+
+    .cur-date-long .inlineEditInput {
+        font-size: 12px;
+        margin-right: 0 !important;
+        padding-bottom: 2px !important;
+        background-color: #F4F4F4;
+        height: 16px !important;
+    }
+
+    #tcalico_dayInfo {
+        margin: 0;
+    }
+
+    .cur-date-long {
+        padding-top: 3px;
+    }
+
+    #cur-date-long-edit {
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+
+    .date-tog-c {
+        background-image: url(https://static.mindbodyonline.com/v65289/images/date-span-bg.png);
+        background-repeat: repeat-x;
+        height: 24px;
+        text-align: center;
+        padding: 0 5px 0 5px;
+        line-height: 22px;
+        color: #555;
+    }
+
+    #ifbDayWeekMonthControls .date-tog-sel-c {
+        color: #cc292b;
+        cursor: default !important;
+        font-weight: bold;
+    }
+</style>
+<script type="text/javascript">
+    var isCalendarOpen = false;
+    var dateChanged = false;
+    $(document).ready(function () {
+
+        $(".day-tog").click(function () { toggleDateType("day"); });
+        $(".week-tog").click(function () { toggleDateType("week"); });
+        $(".month-tog").click(function () { toggleDateType("month"); });
+        $(".dayNavigation-dayLabel").click(function () { toggleDateType("day"); });
+        $(".weekNavigation-weekLabel").click(function () { toggleDateType("week"); });
+        
+        // bind arrow click, only show on day/week views
+
+        $("#day-arrow-l").click(function () { window.autoSubmitDateTo(true, false); });
+        $("#day-arrow-r").click(function () { window.autoSubmitDateTo(true, true); });
+        $("#dayNavigation-prevDayButton").click(function () { window.autoSubmitDateTo(true, false); });
+        $("#dayNavigation-nextDayButton").click(function () { window.autoSubmitDateTo(true, true); });
+        $("#week-arrow-l").click(function () { window.autoSubmitDateTo(false, false); });
+        $("#week-arrow-r").click(function () { window.autoSubmitDateTo(false, true); });
+
+        $("#month-arrow-l").click(function () { window.autoSubmitDateTo("month", false); });
+        $("#month-arrow-r").click(function () { window.autoSubmitDateTo("month", true); });
+
+        $("#weekNavigation-prevWeekButton").click(function () { window.autoSubmitDateTo(false, false); });
+        $("#weekNavigation-nextWeekButton").click(function () { window.autoSubmitDateTo(false, true); });
+        $("#txtDate").change(function () {
+            dateChanged = true;
+            subForm();
+        });
+
+        $("#txtDate").click(function () {
+            calendarOpen();
+        });
+
+
+        if (isMobileBrowser()) {
+            $('#cur-date-long-edit').hide();
+            $('#txtDate').show();
+            $("#txtDate").click(function () {
+                calendarOpen();
+            });
+        } else {
+            var $inlineEditInput = $('#cur-date-long-edit'),
+            $inlineEditInputTemp = $("<span/>").appendTo("body").css({
+                fontSize: $inlineEditInput.css("font-size"),
+                padding: $inlineEditInput.css("padding"),
+                border: $inlineEditInput.css("border")
+            }).text($inlineEditInput.val());
+            //append span with same attributes as cur-date-long-edit to body, put in the localized date and grab the spans width
+            //set cur-date-long-edit's width to the same as the span we created above
+            $inlineEditInput.width($inlineEditInputTemp.width());
+            //get rid of unnecessary span when done and proceed.
+            $inlineEditInputTemp.remove();
+        }
+        function calendarOpen() {
+            if (!isCalendarOpen) {
+
+                A_TCALS['dayInfo'].f_toggle();
+                isCalendarOpen = true;
+                $('body').unbind("calendarOpen").bind("click.calendarOpen", function (event) {
+                    if (!$(event.target).closest("#tcal").length &&
+                        !$(event.target).closest(".inlineEditInput").length &&
+                        !$(event.target).closest("#txtDate").length &&
+                        !$(event.target).closest(".ctrl").length &&
+                        !$(event.target).closest("img").length &&
+                        !$(event.target).closest("td[title='Previous Year']").length &&
+                        !$(event.target).closest("td[title='Previous Month']").length &&
+                        !$(event.target).closest("td[title='Next Month']").length &&
+                        !$(event.target).closest("td[title='Next Year']").length) {
+                        calendarClose();
+                    }
+                });
+            }
+        }
+        function calendarClose() {
+            if (isCalendarOpen) {
+                A_TCALS['dayInfo'].f_toggle();
+                isCalendarOpen = false;
+
+
+                $('body').unbind("calendarOpen");
+            }
+        }
+        /*$("#cur-date-long-edit").inlineEdit({
+            onStartEditing: function(e){
+                $(this).hide();
+                calendarOpen();				
+                e.stopPropagation();
+            },
+            spellCheckOn: false
+        });*/
+        $("#cur-date-long-edit").focus(function () {
+            $(this).blur();
+            //$("#txtDate").show().focus();
+            $(this).hide();
+            calendarOpen();
+        });
+        var $curDateLong = $('.cur-date-long');
+        $curDateLong.css('width', $curDateLong.outerWidth());
+        $('#tcalico_dayInfo').click(function () {
+            if (isCalendarOpen) {
+                calendarClose();
+            }
+            else {
+                calendarOpen();
+            }
+        });
+    });
+</script>
+
+    
+
+<script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/mb.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/MBS.js" ></script>
+    <!-- begin client alerts --><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/inc_ajax.js" ></script>
+
+    
+    <!-- end client alerts  --><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/calendar2.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/plugins/jquery.selectBox.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/VCC2.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/main_class.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/v65289/styles/main_class.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/v65289/styles/day_week_navigator.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/v65289/styles/jquery.selectBox.css"  />
+    <style type="text/css">
+        #classSchedule-mainTable tr.headerRow td.header
+        {
+            color: #cc292b;
+        }
+    </style>
+
+<script type="text/javascript">
+        $(function() {
+            
+            window.scrollToDay = function() {
+                // anchor to the date
+                if ($('#an6').offset() != null) {
+                    var scrollValue = $('#an6').offset().top - $('#classSchedule-header').offset().top - 30;
+                    
+                    $(document).scrollTop(scrollValue);
+                    
+                }
+            }
+            window.scrollToDay();
+
+        });
+    </script>
+    
+
+
+
+<script type="text/javascript">
+        function updateView() {
+            document.search2.action = "/classic/mainclass";
+            document.search2.submit();
+
+                loginFocus();
+
+        }
+    </script>
+      
+    <form id="ClassScheduleSearch2Form" name="search2" method="post" action="/classic/mainclass">
+      <input type="hidden" name="pageNum" value="1" />
+      <input type="hidden" name="requiredtxtUserName" value="" />
+      <input type="hidden" name="requiredtxtPassword" value="" />
+      <input type="hidden" name="optForwardingLink" value="" />
+      <input type="hidden" name="optRememberMe" value="" />
+      <input type="hidden" name="tabID" value="" />
+      <input type="hidden" id="optView" name="optView" class="bf-filter" value="week" />
+      <input type="hidden" id="useClassLogic" name="useClassLogic" value="" />
+      <input type="hidden" id="filterByClsSch" name="filterByClsSch" value="" />
+      <input type="hidden" id="prevFilterByClsSch" name="prevFilterByClsSch" value="-1" />
+      <input type="hidden" id="prevFilterByClsSch2" name="prevFilterByClsSch2" value="-2" />
+    <div class="wrapperTop">
+      <div class="wrapperTopInner">
+        <div class="pageTop">
+            <div class="pageTopLeft">
+                &nbsp; 
+            </div>
+            <div class="pageTopRight">
+                &nbsp; 
+            </div>
+            <h1 class="classScheduleHeader">Class Schedule</h1> 
+            <div id="dateControls">
+                <div class="leftSide">
+	<table class="date-control-table">
+		<tr>
+			<td>
+				<table id="ifbDayWeekMonthControls" style="padding: 0px; vertical-align: middle;">
+					<tr>
+                        
+							<td id="today-button">
+								<a class="simple-round-button inline today-button  is-today">
+Today								</a>
+							</td>
+						
+							<td id="day-arrow-l" class="date-arrow-l ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td id="day-tog-c" class="day-tog date-tog-c  selectable">Day</td>
+							<td id="day-arrow-r" class="date-arrow-r ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td id="week-arrow-l" class="date-arrow-l ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td id="week-tog-c" class="week-tog date-tog-c  date-tog-sel-c selectable">Week</td>
+						<td id="week-arrow-r" class="date-arrow-r ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			
+		</tr>
+    </table>
+
+                </div>
+                <div class="rightSide">
+                    <input id="txtDate" type="text" name="txtDate" size="10" maxlength="14" value="4/17/2015" class="date bf-filter" />
+                    &nbsp;
+<script type="text/javascript">
+                        var cal1 = new tcal({'id': 'dayInfo', 'formname':'search2', 'controlname':'txtDate'});
+                        cal1.a_tpl.yearscroll = true;
+                        $('#txtDate').change(subForm
+);
+                        $('#tcalico_dayInfo').attr('onclick', '$("#txtDate").focus()');
+                    </script>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixedHeader">
+        <div class="topFilters group">
+            <div class="topFiltersInner group">
+                <div class="filterList">
+
+                            
+                        <select name="optVT" id="optVT" class="bf-filter" onChange="filterClasses(this);">
+                          <option value="0">All class types</option>
+
+                                <option value="Orange 60 Minute" title="" 
+>
+Orange 60 Minute
+                                                                </option>
+
+                                <option value="Orange 90 Minute" title="" 
+>
+Orange 90 Minute
+                                                                </option>
+
+                        </select>
+
+            <select name="optInstructor" id="optInstructor" class="bf-filter" onChange="filterClasses(this);">
+                <option value="0">All teachers</option>
+
+                  <option value="100000006" title="" 
+>
+Allen
+                                    </option>
+
+                  <option value="100000028" title="" 
+>
+Ben
+                                    </option>
+
+                  <option value="100000019" title="" 
+>
+Chad
+                                    </option>
+
+                  <option value="100000034" title="" 
+>
+Cody
+                                    </option>
+
+                  <option value="100000001" title="" 
+>
+Hollis
+                                    </option>
+
+                  <option value="100000003" title="" 
+>
+Jolen
+                                    </option>
+
+                  <option value="100000011" title="" 
+>
+Kat
+                                    </option>
+
+                  <option value="100000027" title="" 
+>
+Kellie
+                                    </option>
+
+                  <option value="100000021" title="" 
+>
+Lauren
+                                    </option>
+
+                  <option value="100000007" title="" 
+>
+Staff
+                                    </option>
+
+                  <option value="100000013" title="" 
+>
+Tee
+                                    </option>
+
+                </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <div style="clear:both"></div>
+	<div id="wrapper-frame" style="position:relative;">
+	<div id="wrapper-minheight">
+	<div id="wrapper-bottompad">
+	<div style="display:block;height:0;clear:both;">&nbsp;</div>
+	<div class="wrapper">
+	<div id="main-content">
+    <table height="100%" width="100%" cellspacing="0" id="classSchedule">
+           
+<!-- @fix @todo consumer mode redesign
+
+  <tr> 
+    <td class="mainText" nowrap valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="main_help.asp"><strong><script type="text/javascript">document.write(allHotWords(92));</script></strong></a> =learnRes%></td>
+    <td width="60%" align="left" nowrap height="20" valign="bottom">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="textSmall" align="left" height="8" valign="bottom"></td>
+  </tr>
+
+-->
+
+<!-- @todo cs remove  
+
+-->
+  <tr> 
+    <td class="" nowrap colspan="2">
+    <div id="fixedTableHeader">
+        <div id="fixedTableHeaderInner">
+            <table id="classSchedule-header" cellspacing="0">
+               <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<table id="classSchedule-mainTable" class="" cellspacing="0">
+<thead><tr class="floatingHeaderRow"><th id="startTimeHeader" class="floatingHeader" style="padding-left:10px;" >Start time</th><th id="signUpNowHeader" class="floatingHeader" style="cursor:auto;">&nbsp;</th><th id="classNameHeader" valign="bottom" class="floatingHeader" >Classes</th><th id="trainerNameHeader" valign="bottom" class="floatingHeader">Teacher</th><th id="durationHeader" class="floatingHeader" >Duration</th></tr> </thead><tr><td colspan="100%" class="header"id="an2"><b>&nbsp;<span class="headText">Mon&nbsp;</span>April 13, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;8:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Ben</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(1)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Ben</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(2)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Ben</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(3)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;3:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Chad</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Chad</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Chad</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000011" class="modalBio" >Kat</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000011" class="modalBio" >Kat</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr><td colspan="100%" class="header"id="an3"><b>&nbsp;<span class="headText">Tue&nbsp;</span>April 14, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Kellie</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Kellie</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;8:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;10:45&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Ben</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;3:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Michelle</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(4)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Michelle</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(5)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;5:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Chad</span> <span class="smallTextBlack"><a title="Regularly ScheduledAllen"><span style="color:#990000;">(6)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Chad</span> <span class="smallTextBlack"><a title="Regularly ScheduledAllen"><span style="color:#990000;">(7)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Chad</span> <span class="smallTextBlack"><a title="Regularly ScheduledAllen"><span style="color:#990000;">(8)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr><td colspan="100%" class="header"id="an4"><b>&nbsp;<span class="headText">Wed&nbsp;</span>April 15, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;8:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Michelle</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(9)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Michelle</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(10)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Michelle</span> <span class="smallTextBlack"><a title="Regularly ScheduledHollis"><span style="color:#990000;">(11)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;3:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Ben</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Ben</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Ben</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000011" class="modalBio" >Kat</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000011" class="modalBio" >Kat</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr><td colspan="100%" class="header"id="an5"><b>&nbsp;<span class="headText">Thu&nbsp;</span>April 16, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Kellie</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Kellie</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;8:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;10:45&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000003" class="modalBio" >Jolen</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Ben</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;3:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;5:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledAllen"><span style="color:#990000;">(12)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledAllen"><span style="color:#990000;">(13)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;7:00&nbsp;pm </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Ben</span> <span class="smallTextBlack"><a title="Regularly ScheduledAllen"><span style="color:#990000;">(14)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr><td colspan="100%" class="header"id="an6"><b>&nbsp;<span class="headText">Fri&nbsp;</span>April 17, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000013" class="modalBio" >Tee</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;8:15&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;9:30&nbsp;am </td><td></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td><td><input type="button" name="but143" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 12:00 pm  on Friday, 4/17/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=143&classDate=4/17/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;3:00&nbsp;pm </td><td><input type="button" name="but262" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 3:00 pm  on Friday, 4/17/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=262&classDate=4/17/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledBen"><span style="color:#990000;">(15)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;4:00&nbsp;pm </td><td><input type="button" name="but263" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 4:00 pm  on Friday, 4/17/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=263&classDate=4/17/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledBen"><span style="color:#990000;">(16)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;5:00&nbsp;pm </td><td><input type="button" name="but264" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 5:00 pm  on Friday, 4/17/2015 with Cody', '/ASP/res_a.asp?tg=22&classId=264&classDate=4/17/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Cody</span> <span class="smallTextBlack"><a title="Regularly ScheduledBen"><span style="color:#990000;">(17)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;pm </td><td><input type="button" name="but258" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 6:00 pm  on Friday, 4/17/2015 with Cody', '/ASP/res_a.asp?tg=22&classId=258&classDate=4/17/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Cody</span> <span class="smallTextBlack"><a title="Regularly ScheduledBen"><span style="color:#990000;">(18)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr><td colspan="100%" class="header"id="an7"><b>&nbsp;<span class="headText">Sat&nbsp;</span>April 18, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;6:00&nbsp;am </td><td><input type="button" name="but248" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 6:00 am  on Saturday, 4/18/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=248&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;7:00&nbsp;am </td><td><input type="button" name="but249" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 7:00 am  on Saturday, 4/18/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=249&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;8:00&nbsp;am </td><td><input type="button" name="but250" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 8:00 am  on Saturday, 4/18/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=250&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" >Hollis</a></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td><td><input type="button" name="but251" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 9:00 am  on Saturday, 4/18/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=251&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledTee"><span style="color:#990000;">(19)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;10:00&nbsp;am </td><td><input type="button" name="but253" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 10:00 am  on Saturday, 4/18/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=253&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledTee"><span style="color:#990000;">(20)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td><td><input type="button" name="but252" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 11:00 am  on Saturday, 4/18/2015 with Hollis', '/ASP/res_a.asp?tg=22&classId=252&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><a href="javascript:;" name="bio100000001" class="modalBio" ><span style="color:#990000;">Hollis</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledChad"><span style="color:#990000;">(21)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;12:00&nbsp;pm </td><td><input type="button" name="but271" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 90 Minute at 12:00 pm  on Saturday, 4/18/2015 with Kat', '/ASP/res_a.asp?tg=22&classId=271&classDate=4/18/2015&clsLoc=1'); " value="Sign Up Now"/></td><td>Orange 90 Minute</td><td><a href="javascript:;" name="bio100000011" class="modalBio" ><span style="color:#990000;">Kat</span></a> <span class="smallTextBlack"><a title="Regularly ScheduledTee"><span style="color:#990000;">(22)</span></a></span></td><td >&nbsp;1&nbsp;hour&nbsp;&&nbsp;30&nbsp;minutes</td></tr>
+<tr><td colspan="100%" class="header"id="an1"><b>&nbsp;<span class="headText">Sun&nbsp;</span>April 19, 2015&nbsp;</b></td></tr><tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;7:00&nbsp;am </td><td><input type="button" name="but147" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 7:00 am  on Sunday, 4/19/2015 with Cody', '/ASP/res_a.asp?tg=22&classId=147&classDate=4/19/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Cody</span> <span class="smallTextBlack"><a title="Regularly ScheduledStaff"><span style="color:#990000;">(23)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;8:00&nbsp;am </td><td><input type="button" name="but254" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 8:00 am  on Sunday, 4/19/2015 with Cody', '/ASP/res_a.asp?tg=22&classId=254&classDate=4/19/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Cody</span> <span class="smallTextBlack"><a title="Regularly ScheduledStaff"><span style="color:#990000;">(24)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;9:00&nbsp;am </td><td><input type="button" name="but267" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 9:00 am  on Sunday, 4/19/2015 with Cody', '/ASP/res_a.asp?tg=22&classId=267&classDate=4/19/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td>Cody</td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="oddRow"><td>&nbsp;&nbsp;&nbsp;10:00&nbsp;am </td><td><input type="button" name="but268" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 10:00 am  on Sunday, 4/19/2015 with Staff', '/ASP/res_a.asp?tg=22&classId=268&classDate=4/19/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Staff</span> <span class="smallTextBlack"><a title="Regularly ScheduledCody"><span style="color:#990000;">(25)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr class="evenRow"><td>&nbsp;&nbsp;&nbsp;11:00&nbsp;am </td><td><input type="button" name="but269" class="SignupButton" onClick="_gaq.push(['_trackEvent', 'Class_Schedule', 'click', 'Sign_Up_Now_button']);promptLogin('', 'Orange 60 at 11:00 am  on Sunday, 4/19/2015 with Staff', '/ASP/res_a.asp?tg=22&classId=269&classDate=4/19/2015&clsLoc=1'); " value="Sign Up Now"/></td><td><a href="javascript:;" name="cid1" class="modalClassDesc">Orange 60</a></td><td><span style="color:#990000;">Staff</span> <span class="smallTextBlack"><a title="Regularly ScheduledCody"><span style="color:#990000;">(26)</span></a></span></td><td >&nbsp;1&nbsp;hour</td></tr>
+<tr><td  colspan="100%" ><div class="foot-notes-container"><span class="headText bold" >Regularly Scheduled:&nbsp;</span><span style="color:#990000;">(1)</span>&nbsp;Hollis  <span style="color:#990000;">(2)</span>&nbsp;Hollis  <span style="color:#990000;">(3)</span>&nbsp;Hollis  <span style="color:#990000;">(4)</span>&nbsp;Hollis  <span style="color:#990000;">(5)</span>&nbsp;Hollis  <span style="color:#990000;">(6)</span>&nbsp;Allen  <span style="color:#990000;">(7)</span>&nbsp;Allen  <span style="color:#990000;">(8)</span>&nbsp;Allen  <span style="color:#990000;">(9)</span>&nbsp;Hollis  <span style="color:#990000;">(10)</span>&nbsp;Hollis  <span style="color:#990000;">(11)</span>&nbsp;Hollis  <span style="color:#990000;">(12)</span>&nbsp;Allen  <span style="color:#990000;">(13)</span>&nbsp;Allen  <span style="color:#990000;">(14)</span>&nbsp;Allen  <span style="color:#990000;">(15)</span>&nbsp;Ben  <span style="color:#990000;">(16)</span>&nbsp;Ben  <span style="color:#990000;">(17)</span>&nbsp;Ben  <span style="color:#990000;">(18)</span>&nbsp;Ben  <span style="color:#990000;">(19)</span>&nbsp;Tee  <span style="color:#990000;">(20)</span>&nbsp;Tee  <span style="color:#990000;">(21)</span>&nbsp;Chad  <span style="color:#990000;">(22)</span>&nbsp;Tee  <span style="color:#990000;">(23)</span>&nbsp;Staff  <span style="color:#990000;">(24)</span>&nbsp;Staff  <span style="color:#990000;">(25)</span>&nbsp;Cody  <span style="color:#990000;">(26)</span>&nbsp;Cody  </div></td> </tr></table></td></tr>
+<tr>
+<td>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/v65289/styles/inc_login_content.css"  />
+<script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/plugins/jquery.placeholder.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/plugins/jquery.lightboxLib.js" ></script><script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/plugins/jquery.validate.js" ></script>
+
+<script type="text/javascript">
+ function subSUForm(boolSubtype) {
+	if (boolSubtype==1) {
+		if (checkrequired(document.frmReg)) {
+			document.frmReg.lkupType.value = "name";
+			document.frmReg.submit();
+		}
+	} else if (boolSubtype==2) {
+		if (document.frmReg.txtCustomerID.value=="") {
+			alert("Please enter your Orangetheory Fitness Point Loma #0093 ID");
+			document.frmReg.txtCustomerID.focus();
+		} else {
+			document.frmReg.lkupType.value = "id";
+			document.frmReg.submit();
+		}
+	} else {	//required f/lname & ID
+		if (checkrequired(document.frmReg)) {
+			if (document.frmReg.txtCustomerID.value=="") {
+				alert("Please enter your Orangetheory Fitness Point Loma #0093 ID");
+				document.frmReg.txtCustomerID.focus();
+			} else {
+				document.frmReg.submit();
+			}
+		}
+	}	
+}
+ // This function hides the generic login message and replaces with the specific one.
+function showSpecificLogin()
+{
+	mbfb.getFBUserInfo(function (user)
+	{
+		var notHw = "Not";
+		var $facebook = $('#FacebookHeader');
+		var logInAs = 'Log in as <FACEBOOKNAME>';
+	    logInAs = logInAs.replace("<FACEBOOKNAME>", user.name);
+		
+		// Need to create the text for the specific message
+		$('#SpecificMessage', $facebook).empty()
+			.append(mbfb.getFBUserImage())
+			.append($("<div id=\"LoginAs\"><div class=\"fb-lg-as-txt ellipsis\">" + logInAs + "</div><div class=\"fb-lg-as-txt fb-login-as-bttm ellipsis\"></div></div>"));
+		$("#LoginAs .fb-lg-as-txt").prop("title", logInAs);
+		$("#LoginAs .fb-lg-as-txt fb-login-as-bttm").prop("title", logInAs);
+		
+		var notUser = 'Not A023F08D32F040CA885DC08A4A2707CD?';
+	    notUser = notUser.replace("A023F08D32F040CA885DC08A4A2707CD", user.first_name);
+		$("#NotMeName").html(notUser);
+		$("#NotMeName").prop("title", notUser);
+		var $GenericMessage = $('#GenericMessage', $facebook);
+		$GenericMessage.fadeOut(400, function ()
+		{
+			$GenericMessage.hide();
+			$("#FacebookLoginButton").css("top", "14px");
+			$('#SpecificMessage', $facebook).show().css("display", "inline-block");
+			$('#fbHeaderRightContainer', $facebook).show().css("display", "inline-block");
+		});
+		//'Alternative' Login/VerifyStep Related
+		var $VerifyYourLoginFacebook = $('#VerifyYourLogin');
+		var $generalMessageVerify = $('#AlternativeLoginGenericMessage', $VerifyYourLoginFacebook);
+		$generalMessageVerify.empty()
+				.append(mbfb.getFBUserImage())
+				.append($("<span class=\"pp-c-lg-b ellipsis\">Before you can log in using Facebook...</span>"));
+	});
+}
+function facebookAutoLoginFromPortal()
+{
+
+	
+}
+ </script>
+<script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/Facebook/mb.facebook.js" ></script>
+<div id="fb-root"></div>
+<script type="text/javascript">
+	(function (d) {
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) { return; }
+		js = d.createElement('script'); js.id = id; js.async = true;
+
+		if (window.implementationSwitchIsEnabled("XM_UpdateFacebookToV2InAdditionalPlaces")) {
+		    js.src = "//connect.facebook.net/en_US/sdk.js";
+	    } else {
+	        js.src = "//connect.facebook.net/en_US/all.js";
+	    }
+
+	    d.getElementsByTagName('head')[0].appendChild(js);
+	} (document));
+</script>
+
+
+<div id="LoginContent" class="LoginContent su1-specific-centering"
+	style="display: none;">
+	<div id="DefaultLogin">
+		<div id="TopInfo">
+			<div id="CloseButton"></div>
+			<h2 class="LoginHeader" style="display:none"><span id="BookingInfoText1" style=""></span> <span id="BookingInfoText2" style=""></span></h2>
+			<br />
+			<div style="clear:both"></div>
+		</div>
+
+		<div id="FacebookHeader" class="FacebookLogin">
+			<span id="GenericMessage">
+				<img class="gen-m-fb-image" src="https://static.mindbodyonline.com/v65289/asp/images/facebooklogo.png" alt="" />
+				<span class="lg-w-fb-pp" title="Log in with Facebook">
+Log in with Facebook
+				</span> 
+			</span>
+			<div id="SpecificMessage">
+			</div>
+			<div id="fbHeaderRightContainer">
+				<a id="NotTroyLink" onclick="mbfb.logOutOfFacebook();"><span id="NotMeName">&nbsp;</span><span
+					class="not-me-q-mk">?</span></a>
+			</div>
+			<img id="FacebookLoginButton" src="https://static.mindbodyonline.com/v65289/asp/images/facebookloginbutton.png" alt="Click here to log in with Facebook!"
+				title="Click here to log in with Facebook!" />
+			<img id="FacebookAjaxSpinner" src="https://static.mindbodyonline.com/v65289/asp/adm/images/ajax-loader-gray.gif" />
+		</div>
+
+		<div id="LoginPanesGroup">
+
+				<input type="hidden" name="PleaseCompleteAllFields" id="PleaseCompleteAllFields" value="You&#39;ve provided incomplete information. Please try again, or contact us for help." />
+ 			<div class="LoginPane group" id="ExistingUserPane">
+				<form name="frmLogon"  method="Post" action="/ASP/login_p.asp">
+					<div class="LoginPaneInnerContent">
+						<div class="GreetingAndInstructionsGroup">
+							<h1 id="ExistingUsersHeader">Been here before?</h1>
+							<div id="ExistingUserInstructions">If you&#39;ve already created a personal login, then please enter your information below to continue.</div>
+						</div>
+						<div class="InputsAndButtonsGroup">
+							<input class="" id="su1UserName" type="email" spellcheck="false" name="requiredtxtUserName" placeholder=" email / username"
+								autocomplete="off"  maxlength="100"/><br />
+							<input class="" id="su1Password" type="password" name="requiredtxtPassword" placeholder=" password" 
+								autocomplete="off" maxlength="15"/>
+						
+							<div class="LoginErrorDiv" id="LoginError"></div>
+							<div class="LoginBottomGroup" id="ExistingUserLoginBottomGroup group">
+
+							<input class="loginButton" type="button" value="Log in" name="btnSignUp2" id="btnSu1Login" />
+<div style="width:100px; float:left; overflow-x: hidden" class="forgotPasswordPane"> <a id="forgotPassword" href="/PasswordReset/">Forgot password?</a></div>
+ 
+							
+							</div>
+						</div>    
+				
+					</div>
+<input type="hidden" name="tg" value="" /> <input type="hidden" name="vt" value="" /> <input type="hidden" name="lvl" value="" /> <input type="hidden" name="stype" value="" /> <input type="hidden" name="qParam" value="" /> <input type="hidden" name="view" value="" /> <input type="hidden" name="trn" value="0" /> <input type="hidden" name="page" value="" /> <input type="hidden" name="catid" value="" /> <input type="hidden" name="prodid" value="" /> <input type="hidden" name="prodGroupId" value="" /> <input type="hidden" name="date" value="4/17/2015" /> <input type="hidden" name="classid" value="0" /> <input type="hidden" name="sSU" value="" /> <input type="hidden" name="optForwardingLink" value="" /> 
+					<input type="hidden" name="isAsync" value="false" />
+				</form>
+			</div>
+
+					<div id="PaneDivider">or</div>
+
+			<div class="LoginPane group" id="NewUserPane">
+		
+
+				<input type="hidden" name="ss_CltAddLoginMatchRequirement" id="ss_CltAddLoginMatchRequirement" value="1"/>
+				<input type="hidden" name="StudioName" id="hidStudioName" value="Orangetheory Fitness Point Loma #0093"  />
+			
+				<form name="frmReg" action="/ASP/su1_p.asp" method="post">
+					<div class="LoginPaneInnerContent">
+						<div class="GreetingAndInstructionsGroup">
+							<h1 id="NewUsersHeader">New to our site?</h1>
+							<div id="NewUserInstructions">Please enter your first and last names, then click the button below to continue.</div>
+						</div>
+						<div class="InputsAndButtonsGroup">
+							<input type="hidden" name="lkupType" id="lkupType" value="name"/>
+							<input class="" type="text" id="requiredtxtFirst_Name" autocomplete="off" spellcheck="false"
+									name="requiredtxtFirst_Name" placeholder=" first name" 
+									value="" maxlength="48"/>
+							<br />
+							<input class="" type="text" id="requiredtxtLast_Name" autocomplete="off" spellcheck="false"
+									name="requiredtxtLast_Name" placeholder=" last name"
+									value="" maxlength="48"/>
+						
+
+							<div class="LoginErrorDiv" id="SignUpError"></div>
+						
+							<div class="LoginBottomGroup">
+<input id="btnNext" type="button" value=" Next &#155;" name="btnNext" class="loginButton btnNext-disabled"/>
+							</div>
+						</div>
+						 <input type="hidden" name="optForwardingLink" id="optForwardingLink2" value="" />
+					</div>
+				</form>
+			</div>
+
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://static.mindbodyonline.com/v65289/scripts/inc_fb_confirm_login_lb.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/v65289/styles/inc_fb_confirm_login_lb.css"  />
+<div id="FacebookConfirmation"  style="display: none;"  class="AlternateLoginContent" >  
+	
+	<div id="VerifyYourLogin" >
+		<div id="fbLoginPanesGroup" >			
+			<div id="fbTopInfo">
+				<div id="fbCloseButton"> </div>
+				<div style="clear:both"></div>
+			</div>
+
+			<input type="hidden" name="fbPleaseCompleteAllFields" id="fbPleaseCompleteAllFields" value="You&#39;ve provided incomplete information. Please try again, or contact us for help." />
+			
+ 			<div class="LoginPane group " id="fbExistingUserPane">
+				<div id="FacebookHeader" class="FacebookLoginAlternateHeader">
+					<span id="AlternativeLoginGenericMessage"><img src="https://static.mindbodyonline.com/v65289/asp/images/facebooklogo.png" alt="Facebook"/>Log in with Facebook</span>
+				</div>
+				<form name="frmFbLogon"  method="post" action="/asp/login_p.asp">
+					<input type="hidden" name="fbid" value="" />
+					<input type="hidden" name="fbAccessToken" value="" />
+				<div class="LoginPaneInnerContent">						
+						<div class="GreetingAndInstructionsGroup">
+
+							<h1 id="greetingText">Please verify your Orangetheory Fitness Point Loma #0093 login.</h1>
+							<div id="instructionText">Enter your username and password one last time so we can link your account to Facebook.</div>
+<div class="fbDontHaveLoginPane"> <a id="fbDontHaveLogin" href="">I don&#39;t have a Orangetheory Fitness Point Loma #0093 login</a></div>
+						</div>
+						<div class="InputsAndButtonsGroup">
+							<input class="" id="requiredtxtUserName" type="email" spellcheck="false" name="requiredtxtUserName" placeholder=" email / username"
+								autocomplete="off" maxlength="100"/><br />
+							<input class="" id="requiredtxtPassword" type="password" name="requiredtxtPassword" placeholder=" password" 
+								autocomplete="off" maxlength="15"/>
+						
+							<div class="LoginErrorDiv" id="fbLoginError"></div>
+							<div class="LoginBottomGroup" id="fbExistingUserLoginBottomGroup group">
+
+								<input class="loginButton site-action-button" type="button" value="Log in" name="btnFBVerifyLogin" id="btnFBVerifyLogin" />
+<div style="width:120px; float:left" class="forgotPasswordPane"> <a id="forgotPassword" href="/PasswordRecovery/">Forgot password?</a></div>
+								 <input type="hidden" name="optForwardingLink" id="optForwardingLink" value="" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<form id="fbFrmReg" name="fbFrmReg" action="/ASP/su1_p.asp" method="post">
+				<input type="hidden" name="ss_CltAddLoginMatchRequirement" value="1"/>
+				<input type="hidden" name="StudioName" value="Orangetheory Fitness Point Loma #0093"  />
+				<input type="hidden" name="fbid" value=""  />
+				<input type="hidden" name="fbAccessToken" value=""  />
+				<input type="hidden" name="lkupType" value="name"/>
+				<input type="hidden" name="requiredtxtEmail_Address" value="" />
+				<input type="hidden" name="requiredtxtFirst_Name" value=""/>
+				<input type="hidden" name="requiredtxtLast_Name" value="" />				
+				<input type="hidden" name="optForwardingLink" value="" />
+			</form>	
+
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</div>  
+
+<style type="text/css">
+	#descDivWrapper
+	{
+	    width: auto;
+	    max-width:440px;
+        max-height:400px;
+        z-index: 5;
+	}
+	#descDivWrapper img
+	{
+	    float:left;
+	    display:inline;
+	    margin: 10px 20px 10px 0;
+	}
+	#removeModal
+	{
+	    margin: 0 -18px -30px 0;
+	    width:auto;
+	    float:right;
+	    cursor:pointer;
+	    position: relative;
+	}
+	
+	.DescDivInfo {
+	    background-color: #FFFFFF;
+        clear: both;
+        overflow:auto;
+        float: left;
+        background-color: White;
+	    border: 1px solid #ccc;
+	    -moz-border-radius: 5px 5px 5px 5px;
+	    -ms-border-radius: 5px 5px 5px 5px;
+	    border-radius: 5px 5px 5px 5px;
+	    padding-bottom: 15px;
+	    padding-top: 0;
+        z-index: 5;
+        display: block;
+        font-family: inherit;
+	    -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.3); /* FF3.5+ */
+        -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.3); /* Saf3.0+, Chrome */
+	    -ms-box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+	    box-shadow: 2px 2px 3px rgba(0,0,0,0.3); /* Opera 10.5, IE9, Chrome 10+ */
+        width: 300px;
+	}
+
+	.DescDivInfo p
+    {
+        font-size: 1em;
+        line-height: normal;
+        margin: 7px 20px;
+		word-wrap: break-word;
+		white-space: normal;
+		width:260px;
+    }
+    .bioImg, .classInfoImg
+    {
+    	max-width:150px;
+    	max-height: 107px;
+    }
+    .DescDivInfo p, .DescDivInfo h3 
+    {
+        color: #555;
+    }
+    .DescDivInfo h2
+    {
+        font-size: 15px;
+        font-weight: normal;
+        margin-top: -5px;
+        border-bottom: 1px solid #DDDDDD;
+        width: 260px;
+        padding-bottom: 8px;
+        text-align: left;
+    }
+    
+    .DescDivInfo h3
+    {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 0;
+        border: none;
+        padding-bottom: 5px;
+        text-align: left;
+        padding-bottom: 0;
+        margin-bottom: -4px;
+    }
+    
+    .hrWithImage
+    {
+        margin-left: 0;
+    }
+    
+    #descDivWrapper  .LBCloseButton
+    {
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        float:none;
+        margin: 0;
+        padding: 0;
+    }
+    #triangle
+    {
+        background: url('https://static.mindbodyonline.com/v65289/asp/adm/images/overlay_arrow_r.png') no-repeat scroll left top transparent;
+        border: medium none;
+        display: block;
+        height: 24px;
+        width: 15px;
+        position: absolute;
+    }
+    #descDivWrapper .triangleUp
+    {
+        background: url('https://static.mindbodyonline.com/v65289/asp/images/overlay_arrow_top.png') no-repeat scroll left top transparent !important;
+        margin: 0;
+        height: 15px;
+        width: 24px;
+        top: -12px;
+        left: 0;
+    }
+    #descDivWrapper .triangleDown
+    {
+        background: url('https://static.mindbodyonline.com/v65289/asp/images/overlay_arrow_bottom.png') no-repeat scroll left top transparent !important;
+        margin: 0;
+        height: 15px;
+        width: 24px;
+        top: -12px;
+        left: 0;
+    }
+	.DescDivInfoInner
+	{
+		margin: 10px 20px;
+	}
+	.userHTML {
+		line-height: normal;        
+		word-wrap:break-word;
+		white-space:normal;
+		padding-top:10px;	
+	}
+	.userHTML ul {
+	    overflow:hidden;
+	}
+	.userHTML ol {
+		overflow:hidden;
+	}
+</style>
+<script type="text/javascript">
+	$(function () {
+		// will contain the lightbox content
+		$('body').append('<div id="descDivWrapper" class="" style="position:absolute;display:none;z-index:1001;"></div>');
+		// trainer bio
+		$('.modalBio, .modalClassDesc, .modalLocationInfo').click(function (e) {
+			var ajaxUrl = "",
+			    arrowUp = true,
+			    params = "",
+			    $this = $(this);
+			if ($this.hasClass("modalBio")) {
+				ajaxUrl = "/Ajax/QuickStaffBio/";
+				params = "trnid=" + $(this).attr("name").replace("bio", "");
+			}
+			else if ($this.hasClass("modalClassDesc")) {
+				ajaxUrl = "/Ajax/ClassInfo/";
+				params = "classid=" + $(this).attr("name").replace("cid", "");
+			}
+			else if ($this.hasClass("modalLocationInfo")) {
+				ajaxUrl = "/Ajax/LocationInfo/";
+				params = "locid=" + $(this).attr("name").replace("loc", "");
+				$('#descDivWrapper').css({ 'width': 'auto' });
+			}
+			else {
+			    ajaxUrl = "";
+				params = "";
+			}
+			$('#descDivWrapper').html('<div id="removeModal"><img class="LBCloseButton" alt="close" src="https://static.mindbodyonline.com/v65289/asp/images/close_button.png"/></div><div class="DescDivInfo"><img src="https://static.mindbodyonline.com/v65289/asp/images/loading-gray-scale_100px.gif" style="display:block;margin-left:auto;margin-right:auto;float:none;"/> </div>');
+			var offset = $('#main-content').offset();
+			e.offsetX = e.pageX - offset.left;
+			e.offsetY = e.pageY - offset.top;
+			var leftX = e.pageX - $('#descDivWrapper').width() / 2;
+			var topY = e.pageY;
+			// position for loading
+			if (e.offsetY > ($(window).height() + 200)) {
+				topY = e.pageY - $('#descDivWrapper').height() * 2 - 15;
+				arrowUp = false;
+			} else {
+				topY = e.pageY + 20;
+				arrowUp = true;
+			}
+			$('#descDivWrapper').css({ 'top': topY + "px", 'left': leftX + "px" });
+			// IE 7 reposition dialog and close button
+			if ($.browser.msie && ($.browser.version).indexOf("7.0") != -1) {
+				$('#removeModal').css({ 'top': 0 + "px", 'right': 120 + "px" });
+				$('#descDivWrapper').css({ 'top': topY + "px", 'left': leftX + 70 + "px" });
+			}
+			$('#descDivWrapper').show();
+			// get content
+			$.ajax({
+				type: "GET",
+				url: ajaxUrl,
+				dataType: "html",
+				data: params,
+				success: function (j) {
+					if (j != null && j != "") {
+						if (j.indexOf("http:") != 0) {
+							$('#descDivWrapper').html('<div id="removeModal" ><img class="LBCloseButton" alt="close" src="https://static.mindbodyonline.com/v65289/asp/images/close_button.png"/></div>');
+							var $descDivInfo = $('<div class="DescDivInfo" style="xdisplay: none"></div>');
+							var $descDivInfoInner = $('<div class="DescDivInfoInner" style="xvisibility: hidden"></div>');
+							$descDivInfoInner.css('opacity', 0);
+							$('#descDivWrapper').append($descDivInfo);
+							$descDivInfo.append($descDivInfoInner);
+							$descDivInfo.css("min-height", "80px");
+							$descDivInfoInner.html(j);
+							$descDivInfoInner.css('opacity', 0).animate({ opacity: 1 }, 500, function () {
+								//remove opacity for IE... otherwise fonts still show up ugly
+								$(this).css('opacity', '');
+							});
+							// position with content
+							if (e.offsetY > ($(window).height() + 800)) {
+								topY = e.pageY - $('#descDivWrapper').height() - 10;
+								arrowUp = false;
+							} else {
+								topY = e.pageY + 20;
+								arrowUp = true;
+							}
+							$('#descDivWrapper').css({ 'top': topY + "px", 'left': e.pageX - $('#descDivWrapper').width() / 2 + "px" });
+							// IE 7
+							if ($.browser.msie && ($.browser.version).indexOf("7.0") != -1) {
+								$('#descDivWrapper').css({ 'top': topY + "px", 'left': e.pageX - $('#descDivWrapper').width() / 2 + 70 + "px" });
+							}
+							// position the arrow
+							if (arrowUp) {
+								$('#descDivWrapper').append('<div id="triangle" class="triangleUp"></div>');
+								$('#triangle').css({ 'margin-left': ($('#descDivWrapper').width() / 2) - 6 + "px" });
+								// IE
+								if ($.browser.msie) {
+									if (($.browser.version).indexOf("7.0") != -1) {
+										$('#triangle').css({ 'margin-left': ($('#descDivWrapper').width() / 2) - 80 + "px" });
+									} else {
+										// $('#triangle').css({ 'margin-top': 8 + "px" });
+									}
+								}
+							} else {
+								$('#descDivWrapper').append('<span id="triangle" class="triangleDown"></span>');
+								$('#triangle').css({ 'margin-top': $('#descDivWrapper').height() - 6 + "px", 'margin-left': ($('#descDivWrapper').width() / 2) - 6 + "px" });
+								// IE blows
+								if ($.browser.msie) {
+									if (($.browser.version).indexOf("7.0") != -1) {
+										$('#triangle').css({ 'margin-top': $('#descDivWrapper').height() - 6 + "px", 'margin-left': ($('#descDivWrapper').width() / 2) - 80 + "px" });
+									} else {
+										// $('#triangle').css({ 'margin-top': $('#descDivWrapper').height() - 2 + "px" });
+									}
+								}
+							}
+							// IE 7 reposition close button
+							if ($.browser.msie && ($.browser.version).indexOf("7.0") != -1) {
+								$('#removeModal').css({ 'top': 0 + "px", 'right': 120 + "px" });
+							}
+						} else {
+							window.open(j);
+						}
+					}
+				}
+			});
+		});
+		// remove button
+		$('#removeModal').live('click', function () {
+			$('#descDivWrapper').html("");
+			$('#descDivWrapper').hide();
+		});
+	});
+</script>
+
+</td>
+</tr>
+</table>
+
+    </table>
+
+</div> <!--  main-content -->
+</div> <!--  wrapper -->
+</div> <!--  wrapper-bottompad -->
+</div> <!--  wrapper-minheight -->
+	
+	
+	
+	</div><!-- wrapper-frame --> 
+	
+	
+
+	<script type="text/javascript">
+        loginFocus();
+
+	    makeContentScrollable(true, false, false);
+	   A first chance exception of type 'System.ArgumentOutOfRangeException' occurred in mscorlib.dll
+ $(window).bind('GlobalMakeContentScrollable', function() {
+	        makeContentScrollable(true, false, false);
+	    });
+	    $(window).bind('resize', triggerMakeContentScrollable);
+	</script>
+	
+</div><!-- Closes pageWrapper, which is opened in Pre -->
+	<div id="footer" class="bt4">
+		<div id="ftLeft"  class="frmLabel">
+		    <p>
+<span>4/17/2015 11:25:39 AM in California</span>
+		    </p>
+			<p>
+				<a href="http://www.mindbodyonline.com/privacy-policy" target="_mbswPrivacy">Privacy Policy</a>
+				<span>&copy;2015 MINDBODY Inc.</span>		
+			</p>
+		</div>
+		<div id="ftRight">
+							<a href="http://getmindbodyconnect.com/" target="_mbsw">
+								<img src="https://static.mindbodyonline.com/v65289/Images/mbclogo-footer-.png" alt="MINDBODY Inc." style="border: 0px; padding: 0px 10px 0px 0px;" /></a>
+		</div>
+	</div>
+
+
+
+
+
+	</body>
+</html>

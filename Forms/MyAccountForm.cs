@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -32,31 +33,100 @@ namespace Omtime
 
         private void MyAccountForm_Load(object sender, EventArgs e)
         {
-            //MyAccountDoLogin();
-            //GetVisitHistory();
-
-            string filename = "HtmlResponse.html";
-            HtmlAgilityPack.HtmlDocument htmlDocument = new HtmlAgilityPack.HtmlDocument();
+            HtmlAgilityPack.HtmlDocument htmlDocument;
+#if true
+            MyAccountDoLogin();
+            htmlDocument = GetVisitHistory();
+#else
+            string filename = "..\\..\\Sample Data\\HtmlResponseMyAccountVisitHistory.html";
+            htmlDocument = new HtmlAgilityPack.HtmlDocument();
             htmlDocument.LoadHtml(File.ReadAllText(filename));
+#endif
             ParseVisitHistory(htmlDocument);
-            PopulateChart();
+            PopulateLabels();
+
+            InitGrid();
         }
 
-        private Dictionary<string, int> GetCountOfTeacher()
+        private void InitGrid()
         {
-            Dictionary<string, int> dict = new Dictionary<string, int>();
+            dgvHistory.RowHeadersVisible = false;
+            dgvHistory.AutoGenerateColumns = false;
+            dgvHistory.ColumnCount = 5;
+
+            DataGridViewCellStyle columnHeaderStyle = new DataGridViewCellStyle();
+            columnHeaderStyle.BackColor = Color.Aqua;
+            columnHeaderStyle.Font = new Font("Verdana", 8, FontStyle.Bold);
+            dgvHistory.ColumnHeadersDefaultCellStyle = columnHeaderStyle;
+
+            dgvHistory.Columns[0].Name = "Date";
+            dgvHistory.Columns[0].DataPropertyName = "when";
+            dgvHistory.Columns[0].DefaultCellStyle.Format = "ddd MM/d/yyyy";
+
+            dgvHistory.Columns[1].Name = "Time";
+            dgvHistory.Columns[1].DataPropertyName = "when";
+            dgvHistory.Columns[1].DefaultCellStyle.Format = "HH:mm";
+            dgvHistory.Columns[1].Width = 80;
+
+            dgvHistory.Columns[2].Name = "Guru";
+            dgvHistory.Columns[2].DataPropertyName = "teacher";
+
+            dgvHistory.Columns[3].Name = "Studio";
+            dgvHistory.Columns[3].DataPropertyName = "studio";
+
+            dgvHistory.Columns[4].Name = "Class";
+            dgvHistory.Columns[4].DataPropertyName = "classType";
+            dgvHistory.Columns[4].Width = 105;
+
+            dgvHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvHistory.DataSource = mVisits;
+            SetGridViewHeightWidth();
+        }
+
+        private void SetGridViewHeightWidth()
+        {
+            // Width
+            // This is sort of hacky, but we check if the scrollbar is visible by the controls within dgv
+            //    Control 0 = Horizontal Scroll Bar
+            //    Control 1 = Vertical Scroll Bar
+            // 3 is the magic margin here
+            bool verticalScrollVisible = dgvHistory.Controls[1].Visible;
+            int desired = verticalScrollVisible ? SystemInformation.VerticalScrollBarWidth + 3 : 3;
+
+            foreach (DataGridViewColumn column in dgvHistory.Columns)
+            {
+                desired += column.GetPreferredWidth(DataGridViewAutoSizeColumnMode.AllCells, true);
+            }
+            dgvHistory.Width = desired;
+            this.ClientSize = new Size(dgvHistory.Width, this.ClientSize.Height);
+        }
+
+        private void GetCounts()
+        {
+            Dictionary<string, int> dictTeacher = new Dictionary<string, int>();
+            Dictionary<string, int> dictStudio = new Dictionary<string, int>();
+
             foreach (Visit visit in mVisits)
             {
-                if (!dict.ContainsKey(visit.teacher)) dict.Add(visit.teacher, 0);
-                dict[visit.teacher]++;
+                if (!dictTeacher.ContainsKey(visit.teacher)) dictTeacher.Add(visit.teacher, 0);
+                dictTeacher[visit.teacher]++;
+
+                if (!dictStudio.ContainsKey(visit.studio)) dictStudio.Add(visit.studio, 0);
+                dictStudio[visit.studio]++;
             }
 
-            return dict;
+            labelClasses.Text = mVisits.Count.ToString();
+            labelGurus.Text = dictTeacher.Count.ToString();
+            labelLocations.Text = dictStudio.Count.ToString();
+
+            labelClasses.Left = ((labelClassesTitle.Width - labelClasses.Width) / 2) + labelClassesTitle.Left;
+            labelGurus.Left = ((labelGurusTitle.Width - labelGurus.Width) / 2) + labelGurusTitle.Left;
+            labelLocations.Left = ((labelLocationsTitle.Width - labelLocations.Width) / 2) + labelLocationsTitle.Left;
         }
 
-        private void PopulateChart()
+        private void PopulateLabels()
         {
-            Dictionary<string, int> dict = GetCountOfTeacher();
+            GetCounts();
         }
 
         private void ParseVisitHistory(HtmlAgilityPack.HtmlDocument htmlDocument)
@@ -108,7 +178,7 @@ namespace Omtime
             }
         }
 
-        private void GetVisitHistory()
+        private HtmlAgilityPack.HtmlDocument GetVisitHistory()
         {
             Console.WriteLine("Get visit history");
 
@@ -128,11 +198,11 @@ namespace Omtime
             catch (Exception e)
             {
                 Console.WriteLine("Exception in httpWebRequest.GetResponse: " + e.ToString());
-                return;
+                return null;
             }
 
             HtmlAgilityPack.HtmlDocument htmlDocument = GetHtmlDocument(httpWebRequest);
-            if (null == htmlDocument) return; // mindbodyonline is down
+            return htmlDocument;
         }
 
         private void MyAccountDoLogin()
@@ -251,6 +321,7 @@ namespace Omtime
             string requestUri = "http://clients.mindbodyonline.com/ws.asp?studioid=1419";
             mCookieContainer = new CookieContainer();
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(requestUri);
+            httpWebRequest.UserAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36";
             httpWebRequest.CookieContainer = mCookieContainer;
 
             Console.WriteLine("Get cookie from: " + httpWebRequest.RequestUri.AbsoluteUri);

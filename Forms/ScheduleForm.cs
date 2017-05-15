@@ -1778,7 +1778,7 @@ namespace Omtime
 
         private void MyAccountBtn_Click(object sender, EventArgs e)
         {
-#if false // This is not complete yet! Find some time, and finish it, Mike!
+#if true // This is not complete yet! Find some time, and finish it, Mike!
             MyAccountForm myAct = new MyAccountForm();
             myAct.ShowDialog();
             if (myAct.DialogResult == DialogResult.OK)

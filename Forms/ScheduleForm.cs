@@ -1364,6 +1364,13 @@ namespace Omtime
             httpWebRequest.CookieContainer = mCookieContainer;
 
             Console.WriteLine("Get cookie from: " + httpWebRequest.RequestUri.AbsoluteUri);
+
+            // August 2018 - It looks like MBO started to enforce stronger security.
+            // We were getting this exception here:
+            //    "The request was aborted: Could not create SSL/TLS secure channel."
+            // Resolve by setting SecurityProtocol to Tls12
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
 
             // Print the properties of each cookie

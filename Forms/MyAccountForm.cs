@@ -42,9 +42,12 @@ namespace Omtime
             htmlDocument = new HtmlAgilityPack.HtmlDocument();
             htmlDocument.LoadHtml(File.ReadAllText(filename));
 #endif
-            ParseVisitHistory(htmlDocument);
-            PopulateLabels();
+            if (null != htmlDocument)
+            {
+                ParseVisitHistory(htmlDocument);
+            }
 
+            PopulateLabels();
             InitGrid();
         }
 

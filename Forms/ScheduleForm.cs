@@ -220,6 +220,7 @@ namespace Omtime
             else if (!(e.Error == null))
             {
                 Console.WriteLine("DoWebRequestInBackgroudCompleted had error " + e.Error.Message);
+                ItDidNotGoWell();
             }
             else
             {

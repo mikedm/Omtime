@@ -12,7 +12,7 @@ namespace Omtime
 
         public override void WriteLine(string value)
         {
-            value = String.Format("{0:D2}:{1:D2}:{2:D2}:{3:D3} {4}",
+            value = String.Format("{0:D2}:{1:D2}:{2:D2}.{3:D3} {4}",
                 DateTime.Now.Hour,
                 DateTime.Now.Minute,
                 DateTime.Now.Second,

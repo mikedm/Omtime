@@ -1259,6 +1259,12 @@ namespace Omtime
             panelQuickInstructor.Controls.AddRange(sortedArrayInstructors);
             panelQuickStudio.Controls.AddRange(sortedArrayStudios);
             panelQuickClass.Controls.AddRange(sortedArrayClasses);
+
+            // Log each instructor name to the logfile to help with choosing a name for Thrice
+            foreach (var v in sortedListInstructors.Keys)
+            {
+                // Console.WriteLine($"{v}");
+            }
         }
 
         private List<Practice> GetListPractices()
